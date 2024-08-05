@@ -63,7 +63,7 @@ function RenderForecastData(data) {
 }
 
 async function GetUserData() {
-    const CityName = SearchInput.value || "tehran";
+    const CityName = SearchInput.value || "Patna";
     if (!CityName) ShowModal("wrong input");
 
     const WrittenCityNameWeather = await FetchData("current", CityName);
